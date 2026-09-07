@@ -1,8 +1,8 @@
-# Design audit: David Zakharov / Near-surface Alteration & Geochemistry Group
+# Design audit: David Zakharov / Solid Earth Geochemistry Group
 
-**Purpose:** Inform a redesign inspired by Jim Watkins’ lab site (rhythm, hierarchy, one-page academic IA) without copying its Namari/template DNA.  
-**Scope:** Audit + design tokens + one-page IA only — no production CSS/HTML.  
-**Date:** 2026-08-07  
+**Purpose:** Inform a redesign inspired by Jim Watkins’ lab site (rhythm, hierarchy, one-page academic IA) without copying its Namari/template DNA.
+**Scope:** Audit + design tokens + one-page IA only — no production CSS/HTML.
+**Date:** 2026-08-07
 **Sources:** Live inspection via Chrome DevTools MCP; modern-web-guidance searches/retrieves; WMU brand color reference for affiliation (not as primary identity).
 
 ---
@@ -69,17 +69,17 @@ Borrow **structure and editorial rhythm**, not chrome.
 
 ### Section pattern (editorial, not visual clone)
 
-1. **Hero** — field/lab photograph, group identity, CTA.  
-2. **About / research pillars** — short lede + 4–6 topical tiles (icons optional; prefer real micrographs over stock glyphs).  
-3. **Team** — photo grid, PI first, roles as secondary line.  
-4. **Work / publications** — scannable list with PDF/DOI affordance.  
-5. **Join / place** — grad recruitment + “why here” (Davis → Kalamazoo).  
+1. **Hero** — field/lab photograph, group identity, CTA.
+2. **About / research pillars** — short lede + 4–6 topical tiles (icons optional; prefer real micrographs over stock glyphs).
+3. **Team** — photo grid, PI first, roles as secondary line.
+4. **Work / publications** — scannable list with PDF/DOI affordance.
+5. **Join / place** — grad recruitment + “why here” (Davis → Kalamazoo).
 6. **Gallery** — life of the lab (field + instrument + people), lightbox.
 
 ### Nav behavior to emulate (conceptually)
 
-- Single sticky top bar with in-page anchors.  
-- Utility icons for CV / email / Scholar (David: ORCID, email, dept).  
+- Single sticky top bar with in-page anchors.
+- Utility icons for CV / email / Scholar (David: ORCID, email, dept).
 - Scroll-spy active section (Watkins uses stickyNavbar + waypoints; rebuild with Intersection Observer or scroll-driven state, not jQuery).
 
 ---
@@ -108,71 +108,71 @@ David’s **current** Squarespace site is already different (Poppins, multi-page
 
 **Platform today:** Squarespace. **Type:** Poppins (300 body, 500 headings). **Header:** `position: absolute`, ~125px, transparent over heroes; **not sticky** after scroll. **Accent boxes:** `rgb(224,224,219)` / theme `hsla(60,7.5%,87%,1)`. Hero thin-section image already uses `fetchpriority="high"` + `loading="eager"` (good LCP habit to keep).
 
-**Global nav (all pages):**  
-About · Team · Research · Stable isotope lab · Raman microscopy · Service work · Publications · Join Us/Contact  
+**Global nav (all pages):**
+About · Team · Research · Stable isotope lab · Raman microscopy · Service work · Publications · Join Us/Contact
 
 **Global footer:** Department of Geological and Environmental Sciences · WMU · Kalamazoo MI 49008-5241 · (269) 387-5486 · https://wmich.edu/geology/
 
 ### `/` — About (home)
 
-- **Brand:** Near-surface Alteration & Geochemistry Group  
-- **Page title treatment:** “About” over petrographic thin-section hero  
-- **Geochemistry at WMU:** mission on fluid–rock reaction, hydrosphere–lithosphere link; crustal fluids, seawater–basalt, ancient hydrological cycle, hydrothermal systems, seawater evolution, diagenesis  
-- **Meta:** Lab established ~January 2023, PI David Zakharov  
-- **Media:** lab photos (Isabelle Boyer / H-isotopes; Afrid Sheik fluorinating silicates)  
-- **What do geochemists do?** Archean→Holocene samples; petrography, mineralogy, field, modeling  
-- **Lab Updates:** long diary (2023–2026) — grants (NSF OCE #2617725; ACS PRF), papers, AGU, seminars, student milestones  
+- **Brand:** Solid Earth Geochemistry Group
+- **Page title treatment:** “About” over petrographic thin-section hero
+- **Geochemistry at WMU:** mission on fluid–rock reaction, hydrosphere–lithosphere link; crustal fluids, seawater–basalt, ancient hydrological cycle, hydrothermal systems, seawater evolution, diagenesis
+- **Meta:** Lab established ~January 2023, PI David Zakharov
+- **Media:** lab photos (Isabelle Boyer / H-isotopes; Afrid Sheik fluorinating silicates)
+- **What do geochemists do?** Archean→Holocene samples; petrography, mineralogy, field, modeling
+- **Lab Updates:** long diary (2023–2026) — grants (NSF OCE #2617725; ACS PRF), papers, AGU, seminars, student milestones
 
 ### `/team`
 
-- Group photo caption: “K Wings Game, Jan 2024”  
-- **David Zakharov** — address; Assistant Professor (2023–); Postdoc UNIL/SwissSIMS (Marin-Carbonne); PhD Oregon (Bindeman); B.S./Diploma МГРИ-РГГРУ  
-- **Afrid Abdaly Sheik** — PhD since Fall 2023; Jadavpur; hydrothermal basalts / triple O  
-- **Isabelle Boyer** — MS Fall 2025; Pitt–Johnstown; serpentinites  
-- **Zack Stevens** — MS thesis Ingalls Ophiolite fluids (alumni framing)  
-- **Rhys Campbell** — undergrad 2024–2025  
-- **Tom Howe** — Senior Specialist; Hydrogeology Field Course; technical support  
-- **Evan Angeski** — undergrad summer 2023  
+- Group photo caption: “K Wings Game, Jan 2024”
+- **David Zakharov** — address; Assistant Professor (2023–); Postdoc UNIL/SwissSIMS (Marin-Carbonne); PhD Oregon (Bindeman); B.S./Diploma МГРИ-РГГРУ
+- **Afrid Abdaly Sheik** — PhD since Fall 2023; Jadavpur; hydrothermal basalts / triple O
+- **Isabelle Boyer** — MS Fall 2025; Pitt–Johnstown; serpentinites
+- **Zack Stevens** — MS thesis Ingalls Ophiolite fluids (alumni framing)
+- **Rhys Campbell** — undergrad 2024–2025
+- **Tom Howe** — Senior Specialist; Hydrogeology Field Course; technical support
+- **Evan Angeski** — undergrad summer 2023
 - *(Lab updates also mention Andy Smith MS co-supervised with Steve Kaczmarek — confirm for redesigned roster.)*
 
 ### `/research`
 
-- Heading: “Current research and lab activities”  
-- **Kola Craton Neoarchean magmatic-hydrothermal / low-δ¹⁸O** (meteoric reconstruction, zircon CA-ID-TIMS 2673.5±0.3 Ma) + figures  
-- **Paleoproterozoic Snowball Earth** via triple-O of altered rocks; seawater from altered basalts  
-- **Modern water–rock / Iceland & Axial Seamount** δ¹⁸O–Δ¹⁷O; ROV Jason imagery  
-- **Cherts & ocean temperature** SIMS + bulk δ¹⁸O–Δ¹⁷O; seafloor-drilled cherts  
-- Supporting captions: zircon SIMS maps, pillow basalts Vetreny Belt, chert thin sections  
+- Heading: “Current research and lab activities”
+- **Kola Craton Neoarchean magmatic-hydrothermal / low-δ¹⁸O** (meteoric reconstruction, zircon CA-ID-TIMS 2673.5±0.3 Ma) + figures
+- **Paleoproterozoic Snowball Earth** via triple-O of altered rocks; seawater from altered basalts
+- **Modern water–rock / Iceland & Axial Seamount** δ¹⁸O–Δ¹⁷O; ROV Jason imagery
+- **Cherts & ocean temperature** SIMS + bulk δ¹⁸O–Δ¹⁷O; seafloor-drilled cherts
+- Supporting captions: zircon SIMS maps, pillow basalts Vetreny Belt, chert thin sections
 
 ### `/stable-isotope-lab`
 
-- Two rooms, Haenicke Hall; **Delta V Plus**  
-- Conflo IV · Isolink-OH (δD, δ¹⁸O, H₂O wt.%; USGS57/58) · Costech 4010 (CNS, dormant)  
-- Dual inlet **laser fluorination** (Teledyne CO₂ laser, BrF₅, cryogenic purification) for high-precision δ¹⁷O–δ¹⁸O  
-- Process / facility photos and captions live in Gallery (not on Labs copy)  
+- Two rooms, Haenicke Hall; **Delta V Plus**
+- Conflo IV · Isolink-OH (δD, δ¹⁸O, H₂O wt.%; USGS57/58) · Costech 4010 (CNS, dormant)
+- Dual inlet **laser fluorination** (Teledyne CO₂ laser, BrF₅, cryogenic purification) for high-precision δ¹⁷O–δ¹⁸O
+- Process / facility photos and captions live in Gallery (not on Labs copy)
 
 ### `/raman-microscopy`
 
-- **Renishaw InVia**, 532 nm 50 mW, motorized XY, 1800 l/mm; mineral ID/mapping in thin sections  
-- STEM Workforce Collaboratory funding; campus access via REU / CURE-style projects  
+- **Renishaw InVia**, 532 nm 50 mW, motorized XY, 1800 l/mm; mineral ID/mapping in thin sections
+- STEM Workforce Collaboratory funding; campus access via REU / CURE-style projects
 
 ### `/service-work`
 
-- Contact: david.zakharov@wmich.edu  
-- **Stable isotopes:** laser fluorination O isotopes **$50/sample**; H isotopes + H₂O wt.% Isolink-OH **$20/sample**; deliverable spreadsheet (sample#, water, δD, δ¹⁷O, δ¹⁸O ±)  
-- **Raman:** mineral ID **$30/hr**; PowerPoint + spectra + marked optics; mapping up to 100×100 µm  
+- Contact: david.zakharov@wmich.edu
+- **Stable isotopes:** laser fluorination O isotopes **$50/sample**; H isotopes + H₂O wt.% Isolink-OH **$20/sample**; deliverable spreadsheet (sample#, water, δD, δ¹⁷O, δ¹⁸O ±)
+- **Raman:** mineral ID **$30/hr**; PowerPoint + spectra + marked optics; mapping up to 100×100 µm
 
 ### `/publications`
 
-- Note: lab members underlined; student authors `*`  
-- Numbered citation list with DOIs (~20+ entries spanning 2012–2026, Nature/Geology/EPSL/Chem Geol/etc.)  
+- Note: lab members underlined; student authors `*`
+- Numbered citation list with DOIs (~20+ entries spanning 2012–2026, Nature/Geology/EPSL/Chem Geol/etc.)
 
 ### `/contact`
 
-- **Join Us!** undergrad/grad invitation; email David  
-- Project seeds: isotope effects in alteration/diagenesis/silicification; Archean paleoclimate; surface recycling in magmas; Michigan basin / UP geology  
-- **Living and working in Kalamazoo:** population, colleges, Chicago/Detroit ~2.5 h, Amtrak Wolverine, cost of living note, Lake Michigan / South Haven  
-- Embedded map  
+- **Join Us!** undergrad/grad invitation; email David
+- Project seeds: isotope effects in alteration/diagenesis/silicification; Archean paleoclimate; surface recycling in magmas; Michigan basin / UP geology
+- **Living and working in Kalamazoo:** population, colleges, Chicago/Detroit ~2.5 h, Amtrak Wolverine, cost of living note, Lake Michigan / South Haven
+- Embedded map
 
 ---
 
@@ -252,15 +252,15 @@ Avoid Open Sans, Poppins, Inter, Roboto, Arial, system UI stacks.
 
 ### Motion (intentional budget: 2–3)
 
-1. Sticky nav compact + hairline shadow over first ~120px scroll (scroll-driven, reduced-motion → static compact).  
-2. Section eyebrow/title fade-up once via view timeline (or none if reduced-motion).  
+1. Sticky nav compact + hairline shadow over first ~120px scroll (scroll-driven, reduced-motion → static compact).
+2. Section eyebrow/title fade-up once via view timeline (or none if reduced-motion).
 3. Gallery: dialog open/close opacity only — no parallax on LCP hero.
 
 ### Imagery rules (CWV)
 
-- One full-bleed hero `<img>` (or CSS `image-set`) with `fetchpriority="high"`, explicit width/height.  
-- Thin-section / instrument photos as real visual anchors (already strong on David).  
-- Gallery thumbs lazy; lightbox full-res on demand.  
+- One full-bleed hero `<img>` (or CSS `image-set`) with `fetchpriority="high"`, explicit width/height.
+- Thin-section / instrument photos as real visual anchors (already strong on David).
+- Gallery thumbs lazy; lightbox full-res on demand.
 - No decorative gradient substituting for photography.
 
 ---
@@ -284,9 +284,9 @@ Collapse the eight Squarespace routes into **one scrolling lab site** with deep 
 
 ### Suggested first viewport (composition rules)
 
-- Brand name at hero scale (not only nav).  
-- One headline, one supporting sentence, one CTA group (“Join the lab” / “Lab services”).  
-- One dominant full-bleed image (thin section, Haenicke instruments, or field).  
+- Brand name at hero scale (not only nav).
+- One headline, one supporting sentence, one CTA group (“Join the lab” / “Lab services”).
+- One dominant full-bleed image (thin section, Haenicke instruments, or field).
 - No stats strip, no card grid, no floating badges on the hero.
 
 ### Anchor ↔ current content mapping
@@ -305,7 +305,7 @@ Collapse the eight Squarespace routes into **one scrolling lab site** with deep 
 
 ### Nav labels (proposed)
 
-`About` · `Research` · `Lab` · `Team` · `Publications` · `Join`  
+`About` · `Research` · `Lab` · `Team` · `Publications` · `Join`
 (Services can live under Labs; Updates under About or footer.)
 
 ---
@@ -327,9 +327,9 @@ Collapse the eight Squarespace routes into **one scrolling lab site** with deep 
 
 ## 7) Out of scope (explicit)
 
-- Production HTML/CSS/JS for the site  
-- Squarespace theme edits  
-- Copy rewriting (inventory only; diary may need editorial trim later)  
+- Production HTML/CSS/JS for the site
+- Squarespace theme edits
+- Copy rewriting (inventory only; diary may need editorial trim later)
 - Implementing WMU logo lockups beyond token nod to `#532e1f`
 
 ---

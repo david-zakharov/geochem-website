@@ -1,4 +1,4 @@
-# Near-surface Alteration & Geochemistry Group
+# Solid Earth Geochemistry Group
 
 Astro + Vue site for the lab. Live on GitHub Pages:
 
