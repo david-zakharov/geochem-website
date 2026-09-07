@@ -2,7 +2,7 @@
   "name": "davey",
   "version": "0.1.0",
   "private": true,
-  "description": "Near-surface Alteration & Geochemistry Group site (Astro + Vue)",
+  "description": "Solid Earth Geochemistry Group site (Astro + Vue)",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
