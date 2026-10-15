@@ -17,7 +17,7 @@
   },
   "hero": {
     "brand": "Solid Earth Geochemistry Group",
-    "headline": "Petrology, geochemistry and water-rock interaction",
+    "headline": "Petrology, isotope geochemistry, and water-rock interaction",
     "support": "Isotope geochemistry linking the hydrosphere and lithosphere at Western Michigan University.",
     "image": {
       "src": "/assets/img/hero-thin-section.jpg",
@@ -40,7 +40,7 @@
       "id": "about",
       "eyebrow": "About",
       "title": "Solid Earth Geochemistry at WMU",
-      "lede": "Petrology, geochemistry and water-rock interaction"
+      "lede": "Petrology, isotope geochemistry, and water-rock interaction"
     },
     {
       "id": "team",
