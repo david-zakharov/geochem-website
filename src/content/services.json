@@ -8,13 +8,13 @@
       "category": "Stable isotopes",
       "items": [
         {
-          "name": "O-isotope measurements by laser fluorination",
-          "price": "$50/sample",
+          "name": "O-isotope measurements by laser fluorination (mineral separates, whole rocks)",
+          "price": "$50-80/sample",
           "deliverable": "Spreadsheet with sample#, δ¹⁷O, δ¹⁸O and uncertainties"
         },
         {
           "name": "H-isotope measurements and H₂O wt.% determination by thermal conversion elemental analysis EA Isolink-OH",
-          "price": "$20/sample",
+          "price": "$20-40/sample",
           "deliverable": "Spreadsheet with sample#, water content (wt.%), δD, δ¹⁷O, δ¹⁸O and their uncertainties"
         }
       ]
