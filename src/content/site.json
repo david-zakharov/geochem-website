@@ -17,7 +17,7 @@
   },
   "hero": {
     "brand": "Solid Earth Geochemistry Group",
-    "headline": "Fluid–rock reaction from Archean crust to modern seafloor",
+    "headline": "Petrology, geochemistry and water-rock interaction",
     "support": "Geochemistry linking the hydrosphere and lithosphere at Western Michigan University.",
     "image": {
       "src": "/assets/img/hero-thin-section.jpg",
@@ -40,7 +40,7 @@
       "id": "about",
       "eyebrow": "About",
       "title": "Geochemistry at WMU",
-      "lede": "Fluid–rock reaction linking the hydrosphere and lithosphere — from Archean crust to modern seafloor."
+      "lede": "Petrology, geochemistry and water-rock interaction"
     },
     {
       "id": "team",
